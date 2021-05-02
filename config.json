@@ -1,0 +1,56 @@
+{
+    "vbehdasht_base_url": "https://eohservice95361.behdasht.gov.ir/Api/Workshop/GetBarcodeData?Id_Workshop=$id&HashKey=$key",
+    "features": {
+        "map": {
+            "is_enable": "true",
+            "message": "در حال حاضر این ویژگی در دسترس نمی\u200Cباشد."
+        },
+        "health": {
+            "is_enable": "true",
+            "message": "در حال حاضر این ویژگی در دسترس نمی\u200Cباشد."
+        },
+        "post": {
+            "is_enable": "false",
+            "message": "با توجه به آگاهی‌بخشی کافی از رسانه‌های مختلف درباره ویژگی‌ها و علائم بیماری و نکات بهداشتی مرتبط با آن، فعالیت بخش آموزش و اخبار نرم‌افزار فعلا متوقف شده است."
+        }
+    },
+    "health_questions": {
+        "version": 2,
+        "questions": [
+            {"tag":"fever","title":"تب","items":["ندارم", "کم (کمتر از ۳۸/۵)", "زیاد (بیشتر از ۳۸/۵)"]},
+            {"tag":"sore_throat","title":"گلو درد","items":["ندارم", "کم", "زیاد"]},
+            {"tag":"dry_cough","title":"سرفه خشک","items":["ندارم", "کم", "زیاد"]},
+            {"tag":"breath_rate","title":"تعداد تنفس","items":["کمتر از ۲۴ بار در دقیقه", "بین ۲۴ تا ۳۰ بار در دقیقه", "۳۰ بار در دقیقه یا بیشتر"]},
+            {"tag":"body_pain","title":"بدن درد عضلانی","items":["ندارم", "کم", "زیاد"]},
+            {"tag":"chest_pain","title":"درد یا احساس سنگینی در قفسه سینه","items":["ندارم", "کم", "زیاد"]},
+            {"tag":"runny_nose","title":"آبریزش بینی یا عطسه","items":["ندارم", "کم", "زیاد"]},
+            {"tag":"headache","title":"سردرد","items":["ندارم", "کم", "زیاد"]},
+            {"tag":"vomit","title":"تهوع یا استفراغ","items":["ندارم", "مقداری تهوع دارم", "استفراغ می‌کنم"]},
+            {"tag":"diarrhea","title":"اسهال","items":["ندارم", "کم", "زیاد"]},
+            {"tag":"lethargy","title":"بی‌حالی (شامل ضعف، لرز و خستگی زودرس)","items":["ندارم", "کم", "زیاد"]},
+            {"tag":"consciousness","title":"هوشیاری","items":["مشکلی ندارم", "هذیان‌گویی وجود داشته است", "بیهوش شده‌ام"]},
+            {"tag":"smell","title":"بویایی و چشایی","items":["مشکلی ندارم", "قبلا اختلال بویایی یا چشایی داشته‌ام", "اخیرا کم شده است", "اخیرا از دست داده‌ام"]},
+            {"tag":"had_cc","title":"ارتباط نزدیک با فرد دارای کرونای قطعی","items":["طی ۲ هفته اخیر نداشته‌ام", "طی ۲ هفته اخیر داشته‌ام"]}
+        ]
+    },
+  "rapid_test_buttons": {
+    "extra_buttons": [
+      {
+        "id": "hc",
+        "title": "فرم تیم مراقبتی",
+        "show_on_permission": ["submit_test_hc"]
+      },
+      {
+        "id": "ct",
+        "title": "فرم تیم رهگیری",
+        "show_on_permission": ["submit_test_ct"]
+      },
+      {
+        "id": "lab",
+        "title": "فرم ورود اطلاعات آزمایش",
+        "show_on_permission": ["submit_test_lab"]
+      }
+    ],
+    "record_result_button_on_permission": ["submit_test_hc", "submit_test_ct", "submit_test_lab"]
+  }
+}
